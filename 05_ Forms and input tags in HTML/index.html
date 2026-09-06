@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>Application form</h2>
+    <form action="/submit" method="post">
+
+        <label for="username">Name:</label>
+        <input type="text" id="username" name="username" placeholder="Username" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter password" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <h4>Select your gender:</h4>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <h4>Select your role:</h4>
+        <input type="radio" id="student" name="role" value="student">
+        <label for="student">Student</label><br>
+
+        <input type="radio" id="developer" name="role" value="developer">
+        <label for="developer">Developer</label><br>
+
+        <h4>Languages:</h4>
+        <input type="checkbox" id="html" name="language" value="yes">
+        <label for="html">HTML</label><br>
+
+        <input type="checkbox" id="css" name="language" value="yes">
+        <label for="css">CSS</label><br>
+
+        <input type="checkbox" id="javascript" name="language" value="yes">
+        <label for="javascript">Java Script</label><br>
+
+        <h4>Admission Date:</h4>
+        <input type="date" id="admission" name="admission">
+
+        <h4>Review:</h4>
+        <h5>Bad <input type="range" name="range"> Good</h5>
+
+        <h4>Favourite Fruit:</h4>
+        <select name="Fruits">
+            <option value="apple">Apple</option>
+            <option value="banana">Banana</option>
+            <option value="mango">Mango</option>
+        </select><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
